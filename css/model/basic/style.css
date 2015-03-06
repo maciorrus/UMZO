@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+body, article, aside, footer, header, nav, section, div{
+	display: block;
+	margin: 0px;
+	padding:0px;
+}
+
+body{
+	width: 100%;
+}
+
+#top{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	overflow:hidden;
+}
+		
+#top_left{
+	width: 50%;
+	overflow:hidden;
+	margin-top: 50px;
+	float: left;
+}
+		
+#top_right{
+	width: 50%;
+	overflow:hidden;
+	margin-top: 50px;
+	float: left;
+}
+		
+#top_2nd{
+	width: 100%;
+	overflow:hidden;
+	clear: both;
+}
+		
+#left{
+	width: 30%;
+	overflow:hidden;
+	float: left;
+}
+		
+#content{
+	width: 40%;
+	overflow:hidden;
+	float: left;
+}
+		
+#right{
+	width: 30%;
+	overflow:hidden;
+	float: left;
+}
+		
+#bottom{
+	width: 100%;
+	overflow:hidden;
+	clear: both;
+}
+		
+#bottom_left{
+	width: 50%;
+	overflow:hidden;
+	float: left;
+}
+		
+#bottom_right{
+	width: 50%;
+	overflow:hidden;
+	float: left;
+}
+		
+#footer{
+	width: 100%;
+	overflow:hidden;
+	clear: both;
+}
