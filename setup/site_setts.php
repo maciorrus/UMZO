@@ -17,7 +17,7 @@
             <option value="blog"  <?php if($_SESSION['site_type']=='blog') {echo 'selected="selected"';} ?>>Blog</option>
         </select><br/>
     </fieldset>
-    <input type="submit" value="Next"><br/>
+    <input type="submit" value="<?php echo $lang['next']; ?>"><br/>
 </form>
 
 <script>

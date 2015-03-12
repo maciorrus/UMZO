@@ -12,7 +12,7 @@
          <?php echo $lang['last_name']; ?>:<br/>
         <input type="text" name="admin_last_name" value="<?php echo $_SESSION['admin_last_name']; ?>"><br/>
     </fieldset>
-    <input type="submit" value="Next"><br/> 
+    <input type="submit" value="<?php echo $lang['install']; ?>"><br/> 
 </form>
 
 <script>

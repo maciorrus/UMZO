@@ -9,6 +9,11 @@ body{
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
+        min-width: 650px;
+}
+
+fieldset{
+	display: inline-block;
 }
 
 form{
@@ -59,6 +64,7 @@ fieldset{
 	margin: 0 auto;
 	background: #FFF; 
 	text-align: center;
+	width: 46em; 
 }
 .top_nav{
 	border-radius: 10px;

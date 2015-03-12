@@ -19,4 +19,6 @@ $lang['host_name'] = 'Nazwa hosta';
 $lang['db_name'] = 'Nazwa bazy danych';
 $lang['db_user'] = 'Nazwa użytkownika bazy danych';
 $lang['db_pass'] = 'Hasło bazy danych';
+$lang['installation'] = 'Instalacja';
+$lang['install'] = 'Zainstaluj';
 ?>

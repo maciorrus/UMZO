@@ -40,6 +40,9 @@ else
         <div class="top_nav<?php if ($step == 3) echo ' active'; ?>" >
 <?php echo $lang['admin_data']; ?>
         </div>
+        <div class="top_nav<?php if ($step == 4) echo ' active'; ?>" >
+<?php echo $lang['installation']; ?>
+        </div>
     </nav>
     <section id="main">
         <?php
@@ -49,6 +52,8 @@ else
             case 2: include 'database_c.php';
                 break;
             case 3: include 'basic_data.php';
+                break;
+            case 4: include 'install.php';
                 break;
         }
         ?>

@@ -1,6 +1,8 @@
 <?php
 
-require_once 'config/db.php';
+if (file_exists('config/config.php'))
+    require_once 'config/config.php';
+else    header ('location: setup/index.php');
 require_once 'classes/module.php';
 
 $db = new DB();
