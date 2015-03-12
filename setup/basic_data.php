@@ -1,4 +1,4 @@
-<form method="post" action="index.php?step=2">
+<form method="post" action="index.php?step=4">
     <fieldset> 
         <legend><?php echo $lang['admin_data']; ?>:</legend>
         Login:<br/>

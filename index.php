@@ -7,7 +7,7 @@ require_once 'classes/module.php';
 
 $db = new DB();
 
-$sql = "SELECT * FROM settings";
+$sql = "SELECT * FROM ".$db_prefix."_settings";
 if(!$db->connected()) die("Database error");
 
 $s = $db->query($sql, null);

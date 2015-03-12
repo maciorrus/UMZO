@@ -32,13 +32,31 @@ else
     </section>
     <nav id="top">
         <div class="top_nav<?php if ($step == 1) echo ' active'; ?>" >
-<?php echo $lang['site_settings']; ?>
+            <a href="index.php">
+                <?php echo $lang['site_settings']; ?>
+            </a>
         </div>
         <div class="top_nav<?php if ($step == 2) echo ' active'; ?>" >
-<?php echo $lang['database_configuration']; ?>
+            <?php 
+                if(isset($_SESSION['host_name'])){
+                    echo '<a href="index.php?step=2">';
+                    echo $lang['database_configuration'];
+                    echo '</a>';
+                }else{
+                    echo $lang['database_configuration'];
+                }
+            ?>
         </div>
         <div class="top_nav<?php if ($step == 3) echo ' active'; ?>" >
-<?php echo $lang['admin_data']; ?>
+            <?php 
+                if(isset($_SESSION['admin_login'])){
+                    echo '<a href="index.php?step=3">';
+                    echo $lang['admin_data'];
+                    echo '</a>';
+                }else{
+                    echo $lang['admin_data'];
+                }
+            ?>
         </div>
         <div class="top_nav<?php if ($step == 4) echo ' active'; ?>" >
 <?php echo $lang['installation']; ?>
@@ -63,4 +81,3 @@ else
     </footer>
 </body>
 </html>
-<?php ?>

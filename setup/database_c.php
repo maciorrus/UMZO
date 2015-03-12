@@ -8,7 +8,10 @@
         <?php echo $lang['db_user']; ?>:<br/>
         <input type="text" name="db_user" value="<?php echo $_SESSION['db_user']; ?>"><br/>
         <?php echo $lang['db_pass']; ?>:<br/>
-        <input type="password" name="db_pass" value="<?php echo $_SESSION['db_pass']; ?>"><br/>    </fieldset>
+        <input type="password" name="db_pass" value="<?php echo $_SESSION['db_pass']; ?>"><br/>    
+        Prefix:<br/>
+        <input type="text" name="db_prefix" value="<?php echo $_SESSION['db_prefix']; ?>"><br/>    
+    </fieldset>
     <input type="submit" value="<?php echo $lang['next']; ?>"><br/>
 </form>
 

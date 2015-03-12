@@ -5,7 +5,12 @@ class DB {
     private $db;
 
     function __construct() {
-
+        global $mysql_database; 
+        global $mysql_host; 
+        global $mysql_user; 
+        global $mysql_password; 
+        global $db_prefix; 
+    
         $dsn = "mysql:dbname=$mysql_database;host=$mysql_host";
         $db = null;
         try {
