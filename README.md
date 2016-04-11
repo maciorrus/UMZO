@@ -1,1 +1,2 @@
 # UMZO
+# Maciej Michalak
