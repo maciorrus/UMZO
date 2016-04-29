@@ -1,5 +1,12 @@
 <?php
 session_start();
+
+function getSValue($name){
+    if(isset($_SESSION[$name]))
+        return $_SESSION[$name];
+    else
+        return "";
+}
 foreach ($_POST as $k => $v)
     $_SESSION[$k] = $v;
 

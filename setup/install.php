@@ -26,7 +26,7 @@ $db = null;
 try {
     $db = new PDO($dsn, $_SESSION['db_user'], $_SESSION['db_pass']);
     $task = $db->prepare('
-        CREATE TABLE  `a2783642_umzo`.`'.$_SESSION['db_prefix'].'_settings` (
+        CREATE TABLE  `'.getSValue('db_name').'`.`'.$_SESSION['db_prefix'].'_settings` (
         `id` INT NOT NULL AUTO_INCREMENT ,
         `model` VARCHAR( 50 ) NOT NULL ,
         `template` VARCHAR( 50 ) NOT NULL ,
@@ -36,7 +36,7 @@ try {
     );
     $task->execute();
     $task = $db->prepare('
-        INSERT INTO  `a2783642_umzo`.`'.$_SESSION['db_prefix'].'_settings` (
+        INSERT INTO  `'.getSValue('db_name').'`.`'.$_SESSION['db_prefix'].'_settings` (
         `id` ,
         `model` ,
         `template` ,

@@ -1,6 +1,6 @@
 <?php
 
-require_once './config/db.php';
+///require_once './config/db.php';
 $db = new DB();
 ?>
 
@@ -21,7 +21,7 @@ $db = new DB();
 			?>
         <style>
         </style>
-        <title><?php echo $settings[0]['site_title']; ?></title> 
+        <title><?php echo $settings['site_title']; ?></title> 
     </head>
     <body>
 		<header id="top">
